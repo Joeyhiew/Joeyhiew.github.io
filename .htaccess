@@ -5,12 +5,8 @@ RewriteEngine on
 # does not apply to existing directories, meaning that if the folder exists on the server 
 # then don't change anythign and don't run the Rule
 
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Check for file in directory with .html extension
-
-RewriteCond %{REQUEST_FILENAME}/.html -f
-
 # show the page that has the .html extension
-
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
