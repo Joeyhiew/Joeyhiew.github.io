@@ -26,6 +26,10 @@ const Navbar = () => {
     }
   };
 
+  const handleOnLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   useEffect(() => {
     document.addEventListener("mousedown", handleOutsideClick);
     return () => {
@@ -65,12 +69,22 @@ const Navbar = () => {
         <Avatar src={Profile} className={styles.avatar} />
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <HashLink to="#about" smooth className="nav-link">
+            <HashLink
+              to="#about"
+              smooth
+              className="nav-link"
+              onClick={() => handleOnLinkClick()}
+            >
               About
             </HashLink>
           </li>
           <li className={styles.navItem}>
-            <HashLink to="#projects" smooth className="nav-link">
+            <HashLink
+              to="#projects"
+              smooth
+              className="nav-link"
+              onClick={() => handleOnLinkClick()}
+            >
               Projects
             </HashLink>
           </li>

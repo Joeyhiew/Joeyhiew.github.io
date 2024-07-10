@@ -19,9 +19,8 @@
   }
 
   .sideBar {
-    position: absolute;
+    position: fixed;
     height: 100vh;
-    top: -4vw;
     left: -100vw;
     display: flex;
     flex-direction: column;
@@ -31,7 +30,7 @@
   }
 
   .sideBar.open {
-    left: -4vw;
+    left: 0vw;
   }
 
   .icon {
