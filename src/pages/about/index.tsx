@@ -29,19 +29,27 @@ const AboutPage = () => {
               styles.socialIcon,
               displayIcons ? styles.iconDisplay : ""
             )}
+            onClick={() => {
+              window.open("https://joeyhiew.github.io");
+            }}
           />
           <LinkedinSVG
             className={cx(
               styles.socialIcon,
               displayIcons ? styles.iconDisplay : ""
             )}
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/joey-hiew-mun-yee/");
+            }}
           />
-          <MailSVG
-            className={cx(
-              styles.socialIcon,
-              displayIcons ? styles.iconDisplay : ""
-            )}
-          />
+          <a href="mailto:joeyhiew@live.com.sg">
+            <MailSVG
+              className={cx(
+                styles.socialIcon,
+                displayIcons ? styles.iconDisplay : ""
+              )}
+            />
+          </a>
           <button
             className={styles.connectButton}
             onClick={() => handleConnectClick()}
