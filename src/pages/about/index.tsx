@@ -30,7 +30,7 @@ const AboutPage = () => {
               displayIcons ? styles.iconDisplay : ""
             )}
             onClick={() => {
-              window.open("joeyhiew.github.io");
+              window.open("https://github.com/Joeyhiew");
             }}
           />
           <LinkedinSVG
