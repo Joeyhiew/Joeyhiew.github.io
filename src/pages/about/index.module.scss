@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  margin-bottom: 60px;
 }
 
 .connectContent {
@@ -21,6 +20,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    margin-bottom: 60px;
+  }
+
   .buttonGroup {
     position: relative;
     width: fit-content;
